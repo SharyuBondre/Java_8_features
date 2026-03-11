@@ -7,6 +7,15 @@ interface ArithmeticOperation {
     int operate(int a, int b);
 }
 
+
+/*
+Lambda Expression is the implementation of single abstract method present in the
+funtional interface.
+*/
+
+
+
+
 public class LambdaExample {
     public static void main(String[] args) {
 
