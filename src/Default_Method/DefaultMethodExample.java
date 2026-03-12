@@ -1,7 +1,6 @@
 package Default_Method;
 
 /*
-
 In Java 8, default methods allow you to add new functionality to interfaces without breaking
 the classes that already implement them. A default method has a body inside the interface and
 is marked with the default keyword.
