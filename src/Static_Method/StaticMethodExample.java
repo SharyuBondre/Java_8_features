@@ -1,11 +1,9 @@
 package Static_Method;
 
 /*
-
 In Java 8, static methods in interfaces were introduced alongside default methods.
 A static method belongs to the interface itself, not to the instances of classes that
 implement it. You call it directly using the interface name.
-
 */
 
 
