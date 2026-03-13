@@ -3,6 +3,17 @@ package Streams;
 import java.util.*;
 import java.util.stream.*;
 
+/*
+
+In Java 8, the Streams API allows you to process collections of data in a functional style.
+It’s great for filtering, mapping, reducing, and performing bulk operations on data
+
+
+*/
+
+
+
+
 public class StreamsDemo {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -10,7 +21,8 @@ public class StreamsDemo {
         // 1. filter() – keep only even numbers
         List<Integer> evens = numbers.stream()
                 .filter(n -> n % 2 == 0)
-                .collect(Collectors.toList());
+                .collect(Collectors.toList()); //- Collects the filtered stream elements into a new List
+
         System.out.println("Even numbers: " + evens);
 
         // 2. map() – square each number
@@ -18,6 +30,14 @@ public class StreamsDemo {
                 .map(n -> n * n)
                 .collect(Collectors.toList());
         System.out.println("Squares: " + squares);
+
+
+        /*
+
+            1.Filter - Purpose: Selects elements based on a condition (predicate).
+            2.Map - Purpose: Transforms each element of the stream into another form.
+
+        */
 
         // 3. sorted() – sort in reverse order
         List<Integer> sortedDesc = numbers.stream()
